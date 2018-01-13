@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 import { MainModule } from './main/main.module';
+import { Main2Module } from './main2/main2.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -13,6 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     MainModule,
+    Main2Module,
     SharedModule
   ],
   providers: [],
