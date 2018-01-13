@@ -1,0 +1,27 @@
+<div class="container mb-3">
+  <div class="row align-items-center">
+    <div class="col text-center">
+      <div class="card">
+        <div class="card-header">
+          Acumulador
+        </div>
+        <div class="card-body">
+          <button type="button" (click)="btn($event)"
+            id="sumar"
+            class="btn btn-primary">++</button>
+          <button type="button" (click)="btn($event)"
+            id="restar"
+            class="btn btn-primary">--</button>
+            <input type="number" [(ngModel)]="nIncremento">
+        </div>
+        <div class="card-footer text-muted">
+          El total es <span 
+          [ngClass]=" {positivo: this.nTotal >= 0,
+            negativo: this.nTotal < 0} ">
+            {{nTotal}}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

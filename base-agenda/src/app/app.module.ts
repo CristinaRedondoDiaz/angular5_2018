@@ -7,8 +7,10 @@ import { SharedModule } from './shared/shared.module';
 import { MainModule } from './main/main.module';
 import { Main2Module } from './main2/main2.module';
 import { ComunicsModule } from './comunics/comunics.module';
+import { TareasModule } from './tareas/tareas.module';
 // Componente principal
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { AppComponent } from './app.component';
     MainModule,
     Main2Module,
     ComunicsModule,
+    TareasModule,
     SharedModule
   ],
   providers: [],

@@ -65,3 +65,8 @@ Se añade un script npm para inicializar el api
 - Modulo Comunics  (consumido en lugar de Main2, que deja de utilizarse)
   - Componentes padre & hijo que se comunican entre sí
     como ejemplo del uso del interfaz de los componentes: input / output
+
+- Modulo Tareas  (consumido en lugar de Comunics, que deja de utilizarse)
+  - Lista de tareas en versión 2.x y 4.x
+  - Lista de tareas que utiliza el localStorage para darse persistencia
+  - Ejemplo del uso de las clases css en un componente Acumulador
