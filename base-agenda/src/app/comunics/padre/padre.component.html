@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+              <p class="h4">Componente padre</p>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="nombre">Dime un nombre</label>
+                <input type="text"
+                  class="form-control" name="nombre" id="nombre"
+                  [(ngModel)]="sName">
+              </div>
+              <app-hijo [hijoNombre]="sName"
+              (emitNo)="respuestaAlHijo($event)"></app-hijo>
+            </div>
+            <div class="card-footer text-muted">
+             Mi hijo se llama {{sName}}
+            </div>
+          </div>
+    </div>
+  </div>
+</div>

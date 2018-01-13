@@ -1,10 +1,9 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-expresiones',
   templateUrl: './expresiones.component.html',
-  styleUrls: ['./expresiones.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./expresiones.component.css']
 })
 export class ExpresionesComponent implements OnInit {
 

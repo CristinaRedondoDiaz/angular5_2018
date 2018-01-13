@@ -61,3 +61,7 @@ Se añade un script npm para inicializar el api
     - binding (saludo a un contacto usando doble binding)
     - expresiones (uso de expresiones locales)
     - local_contacto (saludo a un contacto usando referencias locales)
+
+- Modulo Comunics  (consumido en lugar de Main2, que deja de utilizarse)
+  - Componentes padre & hijo que se comunican entre sí
+    como ejemplo del uso del interfaz de los componentes: input / output
