@@ -47,3 +47,11 @@ Se añade un script npm para inicializar el api
 ```npm
 "api": "json-server ./db.json --port:3003"
 ```
+
+## Angular básico #
+
+- Módulos Shared
+  - Componentes Cabeza, Pie , Logo
+  - Uso de assets para los elementos estáticos (e.g. imágenes)
+- Módulos Main
+  - Componente Main, creado --flat -is -it
