@@ -1,0 +1,24 @@
+<div class="card mb-2">
+  <div class="card-header">
+      <p class="h4">Referencias locales</p>
+  </div>
+  <div class="card-body">
+    <div class="card-title">
+      <p>Ejemplo del uso de referencias locales</p>         
+    </div>
+    <div class="card-text">
+      <div class="form-group">
+        <label>Dime tu nombre</label>
+        <input type="text" #nombre class="form-control"
+          name="" id="" placeholder="">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" (click)="true;">Guardar</button>
+        <button class="btn btn-primary" (click)=" nombre.value = '' ">Borrar</button>          
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+     <p>Hola {{nombre.value}}</p>
+  </div>
+</div>

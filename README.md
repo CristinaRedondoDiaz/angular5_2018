@@ -55,3 +55,9 @@ Se añade un script npm para inicializar el api
   - Uso de assets para los elementos estáticos (e.g. imágenes)
 - Módulos Main
   - Componente Main, creado --flat -is -it
+
+- Modulo Main2 (consumido en lugar de Main, que deja de utilizarse)
+  - Componentes:
+    - binding (saludo a un contacto usando doble binding)
+    - expresiones (uso de expresiones locales)
+    - local_contacto (saludo a un contacto usando referencias locales)

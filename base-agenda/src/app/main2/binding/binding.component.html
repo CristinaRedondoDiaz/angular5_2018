@@ -1,0 +1,26 @@
+<!-- Componente definido como col-6 -->
+<div class="card mb-2">
+  <div class="card-header">
+    <p class="h4">Binding</p>
+  </div>
+  <div class="card-body">
+    <div class="card-title">
+        <p>Ejemplo de binding</p>
+    </div>
+    <div class="card-text">
+      <div class="form-group">
+        <label for="">Dime tu nombre</label>
+        <input type="text" [(ngModel)]="sNombre"
+          class="form-control" name="" id="" placeholder="">
+      </div>
+      <div class="form-group">
+          <button class="btn btn-primary" (click)="btnBorrar()">Borrar</button>    
+      </div>    
+    </div> <!-- Fin del card-text-->
+  </div> <!-- Fin del card-block-->
+  <div class="card-footer">
+      <p>Hola {{sNombre}}</p>
+  </div>      
+</div> <!-- Fin del card-->
+
+
