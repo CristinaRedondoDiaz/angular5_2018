@@ -1,0 +1,63 @@
+<form novalidate [ngClass]="oValidado" #form1="ngForm" (ngSubmit)="enviar()">
+    <!--Text-->  
+    <!--Radio-Buttos-->
+    <fieldset class="form-group">
+        <legend>Selecciona una Impresora</legend>
+            <div class="form-check" 
+            *ngFor = "let print of aImpresoras">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input"
+                        name = "printer" [id]="print.codigo" 
+                        [value]="print" 
+                        [(ngModel)]="ordenImpresion.impresora">
+                        {{print.nombre}}
+                </label>
+            </div>   
+    </fieldset>
+    <!--Checkbox-->   
+    <fieldset class="form-group"> 
+        <legend>Seleción de opciones</legend>
+        <div class="form-check">
+            <label class="form-check-label">
+            <input type="checkbox"  class="form-check-input"
+                id="color" name="color" 
+                [(ngModel)]="ordenImpresion.isColor"
+                [disabled]="!ordenImpresion.impresora?.codigo">
+                Imprimir en color
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+            <input type="checkbox"  class="form-check-input"
+                id="tono" name="tono" 
+                [(ngModel)]="ordenImpresion.isClaro"> 
+                Tono claro</label>			
+        </div>
+    </fieldset>
+    <!--Select/options --> 
+    <fieldset class="form-group"> 
+        <legend>Departameto</legend>
+        <div class="form-group row">
+            <select class="form-control"
+                id="select" name="select" 
+                [(ngModel)]="ordenImpresion.departamento"> 
+                <option *ngFor="let dpto of aDepartamentos"
+                [ngValue]="dpto">
+                  {{dpto.nombre}}
+                </option>
+            </select>
+        </div>
+    </fieldset>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary mr-2"
+         [disabled]="form1.invalid">
+            Enviar</button>
+        <button type="button" class="btn btn-primary"
+        (click)="btnBorrar()"
+        [disabled]="form1.pristine">
+            Borrar</button>
+    </div>
+</form>
+<pre>
+  {{ordenImpresion | json}}
+</pre>

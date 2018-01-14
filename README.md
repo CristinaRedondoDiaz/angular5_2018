@@ -56,25 +56,36 @@ Se añade un script npm para inicializar el api
 - Módulos Main
   - Componente Main, creado --flat -is -it
 
-- Modulo Main2 (consumido en lugar de Main, que deja de utilizarse)
+- Modulo Main2
+  - Componente base Main2 (consumido en lugar de Main, que deja de utilizarse)
   - Componentes:
     - binding (saludo a un contacto usando doble binding)
     - expresiones (uso de expresiones locales)
     - local_contacto (saludo a un contacto usando referencias locales)
 
-- Modulo Comunics  (consumido en lugar de Main2, que deja de utilizarse)
+- Modulo Comunics
+  - Componente base: Padre  (consumido en lugar de Main2, que deja de utilizarse)
   - Componentes padre & hijo que se comunican entre sí
     como ejemplo del uso del interfaz de los componentes: input / output
 
-- Modulo Tareas  (consumido en lugar de Comunics, que deja de utilizarse)
+- Modulo Tareas:
+  - Componente base: Tareas (consumido en lugar de Padre, que deja de utilizarse)
   - Lista de tareas en versión 2.x y 4.x
   - Lista de tareas que utiliza el localStorage para darse persistencia
   - Ejemplo del uso de las clases css en un componente Acumulador
 
-- Modulo Tareas2 (consumido en lugar de Tareas, que deja de utilizarse)
+- Modulo Tareas2:
+  - Componente base: Main-Tareas (consumido en lugar de Tareas, que deja de utilizarse)
   - Componente principal MainTareas
   - Componentes "sin estado": item (NuevaTarea) y lista (ListaTareas)
   - Comunicaciones basadas en input y output
 
-- Modulo Main3 (consumido en lugar de Tareas2, que deja de utilizarse)
+- Modulo Main3:
+  - Componente base Main3  (consumido en lugar de Main-Tareas, que deja de utilizarse)
   - Ejemplos de los filtros (pipes) incluidos en Angular
+
+- Modulo Formularios
+  - Componente base Main-Forms (consumido en lugar de Main3, que deja de utilizarse)
+  - Formulario User: campos input y validación
+  - Formulario Print: radio-butons, checkbox y select-options
+  - Uso de modelos de datos (Interfaces / Clases)
