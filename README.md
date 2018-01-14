@@ -89,3 +89,14 @@ Se añade un script npm para inicializar el api
   - Formulario User: campos input y validación
   - Formulario Print: radio-butons, checkbox y select-options
   - Uso de modelos de datos (Interfaces / Clases)
+
+- Modulo Libros
+  - Componente base Main-srv (consumido en lugar de Main-Forms, que deja de utilizarse)
+  - Servicios:
+    - LibrosMock - métodos buscarLibros y buscarLibrosAsync
+    - WrapperMock - encapsula el anterior, método buscarLibro
+    - LibrosV5 - encapsula HttpClient, método buscar
+  - Componentes:
+    - BuscarLibros - Busqueda simulada que utiliza los servicios LibrosMock/WrapperMock
+    - BuscarGoogle - Busqueda en Google API directamente con Http / HttpCliente de Angular
+    - BuscarHttpSrv - Busqueda en Google  que utiliza el servicio LibrosV5

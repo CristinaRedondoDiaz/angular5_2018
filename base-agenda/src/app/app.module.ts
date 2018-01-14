@@ -11,9 +11,13 @@ import { TareasModule } from './tareas/tareas.module';
 import { Tareas2Module } from './tareas2/tareas2.module';
 import { Main3Module } from './main3/main3.module';
 import { FormulariosModule} from './formularios/formularios.module';
+import { LibrosModule } from './libros/libros.module';
+// Servicios de la aplicación
+import { LibrosMockService } from './services/libros-mock.service';
+import { WrapperMockService } from './services/wrapper-mock.service';
+import { LibrosV5Service } from './services/libros-v5.service';
 // Componente principal
 import { AppComponent } from './app.component';
-
 
 @NgModule({
   declarations: [
@@ -29,9 +33,14 @@ import { AppComponent } from './app.component';
     Tareas2Module,
     Main3Module,
     FormulariosModule,
+    LibrosModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+    LibrosMockService,
+    WrapperMockService,
+    LibrosV5Service,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
