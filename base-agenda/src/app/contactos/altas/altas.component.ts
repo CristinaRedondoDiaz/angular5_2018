@@ -36,6 +36,6 @@ export class AltasComponent implements OnInit {
   }
 
   private resetContacto() {
-    this.oContacto = {nombre: '', apellido: '', telefono: '', email: ''};
+    this.oContacto = {id: undefined, nombre: '', apellido: '', telefono: '', email: ''};
   }
 }

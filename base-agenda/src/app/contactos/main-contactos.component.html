@@ -9,7 +9,7 @@
               <app-altas (outAddContacto)="addContacto($event)"></app-altas>
             </div>
             <div class="card-footer text-left text-muted" *ngIf="aContactos.length">
-              <app-lista [aItems]="aContactos" (outBorrarItem)="deleteTarea($event)"></app-lista>
+              <app-lista [aItems]="aContactos" (outBorrarItem)="deleteContacto($event)"></app-lista>
             </div>
           </div>
       </div>

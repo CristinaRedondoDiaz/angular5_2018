@@ -105,6 +105,8 @@ Se añade un script npm para inicializar el api
 
 ## Aplicación SPA en Angular ##
 
+- Nueva rama de Git "Contactos"
+
 - Módulo Contactos: Main-Contactos y Lista
   - Componente base Main-contactos (consumido en lugar de Main-srv, que deja de utilizarse)
     - Define la lista de contactos de acuerdo al modelo de datos
@@ -125,3 +127,12 @@ Se añade un script npm para inicializar el api
   - El manejador del evento en el componente principal ejecuta un nuevo método setter del servicio
   - El método set en el servicio añade un elemnto al array de los contactos
       (que de momento carece de persistencia y desarece al recargar)
+
+- API de Contactos: se utiliza JSON Server, previamente instalado y configurado
+    - se modifica el servicio contactos para que utilice el API,
+      inyectando en el el serviico http con un get a localhost:3003/contactos
+      que dara lugar a un array de objetos contacto
+      - el método get recupera la lista de contactos
+      - el método post permite añadir contactos
+      - el método get permite eliminar contactos 
+      Todos ellos se utizan en su forma de promesas

@@ -18,7 +18,7 @@ export class ListaComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.sTitle = 'Contacctor personales';
+    this.sTitle = 'Contactos personales';
     this.sEtiquetaBtn = 'Eliminar';
   }
 

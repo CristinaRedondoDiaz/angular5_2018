@@ -15,20 +15,30 @@ export class MainContactosComponent implements OnInit {
   constructor(public contactosService: ContactosService) { }
 
   ngOnInit() {
-     this.aContactos = this.contactosService.getContactos();
-
+    this.aContactos = [];
+    this.contactosService.getContactos().then(
+       response =>  this.aContactos = response
+     );
   }
 
   // respuesta a los eventos en el componente lista
-  deleteTarea (i) {
-    this.contactosService.deleteContacto(i);
-    this.aContactos = this.contactosService.getContactos();
+  deleteContacto (i) {
+    this.contactosService.deleteContacto(i)
+    .then(
+      () => {this.contactosService.getContactos()
+        .then(response =>  this.aContactos = response);
+      });
+
+    // TODO hacer que lista se actualice con los nuevos datos
   }
 
   // respuesta a los eventos en el componente altas
   addContacto (oContacto) {
-    this.contactosService.setContactos(oContacto);
-    this.contactosService.getContactos();
+    this.contactosService.setContactos(oContacto)
+    .then(
+      () => {this.contactosService.getContactos()
+        .then(response =>  this.aContactos = response);
+      });
   }
 }
 
