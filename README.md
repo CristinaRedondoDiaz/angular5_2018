@@ -48,7 +48,7 @@ Se añade un script npm para inicializar el api
 "api": "json-server ./db.json --port:3003"
 ```
 
-## Angular básico #
+## Angular básico ##
 
 - Módulos Shared
   - Componentes Cabeza, Pie , Logo
@@ -102,3 +102,12 @@ Se añade un script npm para inicializar el api
     - BuscarHttpSrv - Busqueda en Google  que utiliza el servicio LibrosV5
 
     Se incorporan las versiones Rx de la gestión de HttpCliet en otra Rama Git
+
+## Aplicación SPA en Angular ##
+
+  - Módulo Contactos: Main-Contactos y Lista
+    - Componente base Main-contactos (consumido en lugar de Main-srv, que deja de utilizarse)
+      - Define la lista de contactos de acuerdo al modelo de datos
+      - Componente "hijo"  lista, la recibe y la muestra con un ngFor;
+      - Cada item de la lista incluye un boton que envia un evento de borrado
+      - El componente main gestiona el borrado de items en respuesta a los eventos

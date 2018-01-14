@@ -1,0 +1,17 @@
+<div class="container mb-2">
+  <div class="row align-items-center main">
+      <div class="col text-center">
+          <div class="card">
+            <div class="card-header">
+              Lista de Contactos
+            </div>
+            <div class="card-body">
+              <!-- <app-item (outAddTarea)="addTarea($event)"></app-item> -->
+            </div>
+            <div class="card-footer text-left text-muted" *ngIf="aContactos.length">
+              <app-lista [aItems]="aContactos" (outBorrarItem)="deleteTarea($event)"></app-lista>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
