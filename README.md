@@ -70,3 +70,8 @@ Se añade un script npm para inicializar el api
   - Lista de tareas en versión 2.x y 4.x
   - Lista de tareas que utiliza el localStorage para darse persistencia
   - Ejemplo del uso de las clases css en un componente Acumulador
+
+- Modulo Tareas2 (consumido en lugar de Tareas, que deja de utilizarse)
+  - Componente principal MainTareas
+  - Componentes "sin estado": item (NuevaTarea) y lista (ListaTareas)
+  - Comunicaciones basadas en input y output

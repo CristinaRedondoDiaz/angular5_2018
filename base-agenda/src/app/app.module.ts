@@ -8,6 +8,7 @@ import { MainModule } from './main/main.module';
 import { Main2Module } from './main2/main2.module';
 import { ComunicsModule } from './comunics/comunics.module';
 import { TareasModule } from './tareas/tareas.module';
+import { Tareas2Module } from './tareas2/tareas2.module';
 // Componente principal
 import { AppComponent } from './app.component';
 
@@ -23,6 +24,7 @@ import { AppComponent } from './app.component';
     Main2Module,
     ComunicsModule,
     TareasModule,
+    Tareas2Module,
     SharedModule
   ],
   providers: [],
