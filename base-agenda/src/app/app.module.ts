@@ -20,6 +20,8 @@ import { LibrosV5Service } from './services/libros-v5.service';
 import { ContactosService } from './services/contactos.service';
 // Componente principal
 import { AppComponent } from './app.component';
+// Enrutador
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     MainModule,
     Main2Module,
     ComunicsModule,
