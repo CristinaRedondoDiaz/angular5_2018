@@ -12,7 +12,7 @@ export class CabezaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.sTitulo = 'Uso de componentes';
+    this.sTitulo = 'Uso de filtros (Pipes)';
   }
 
 }

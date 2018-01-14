@@ -75,3 +75,6 @@ Se añade un script npm para inicializar el api
   - Componente principal MainTareas
   - Componentes "sin estado": item (NuevaTarea) y lista (ListaTareas)
   - Comunicaciones basadas en input y output
+
+- Modulo Main3 (consumido en lugar de Tareas2, que deja de utilizarse)
+  - Ejemplos de los filtros (pipes) incluidos en Angular
