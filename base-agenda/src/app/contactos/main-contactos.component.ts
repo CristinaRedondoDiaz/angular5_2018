@@ -25,10 +25,10 @@ export class MainContactosComponent implements OnInit {
     this.aContactos = this.contactosService.getContactos();
   }
 
-/*   // respuesta a los eventos en el componente item
-  addTarea (sTarea) {
-    this.aTareas.push(sTarea);
+  // respuesta a los eventos en el componente altas
+  addContacto (oContacto) {
+    this.contactosService.setContactos(oContacto);
+    this.contactosService.getContactos();
   }
-*/
 }
 

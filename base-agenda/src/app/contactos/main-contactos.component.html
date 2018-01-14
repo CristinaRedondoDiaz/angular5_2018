@@ -6,7 +6,7 @@
               Lista de Contactos
             </div>
             <div class="card-body">
-              <!-- <app-item (outAddTarea)="addTarea($event)"></app-item> -->
+              <app-altas (outAddContacto)="addContacto($event)"></app-altas>
             </div>
             <div class="card-footer text-left text-muted" *ngIf="aContactos.length">
               <app-lista [aItems]="aContactos" (outBorrarItem)="deleteTarea($event)"></app-lista>

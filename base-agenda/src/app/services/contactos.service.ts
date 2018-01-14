@@ -30,6 +30,10 @@ export class ContactosService {
         return this.aContactos;
     }
 
+    setContactos(oContacto) {
+        this.aContactos.push(oContacto);
+    }
+
     deleteContacto (i) {
         this.aContactos.splice(i, 1);
       }

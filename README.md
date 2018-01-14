@@ -113,8 +113,15 @@ Se añade un script npm para inicializar el api
     - El componente main gestiona el borrado de items en respuesta a los eventos
 
 - Servicio Contactos: encapsula las acciones sobre los contactos
-
     - El servicio incluye la lista constante y los metodos capaces de
       - devolver la lista
       - borrar de la lista el elemento indicado
     - El servicio de inyecta en Main-Contactos, al que le proporciona la lista
+
+- Alta de contactos: nuevo componente con el formulario de alta de contactos
+  - Incluye un frmulario con una serie de input ligados a ngModel
+  - El evento submit dispara un método capaz de emitir un evento
+      que envia los datos recogidos al componente principal
+  - El manejador del evento en el componente principal ejecuta un nuevo método setter del servicio
+  - El método set en el servicio añade un elemnto al array de los contactos
+      (que de momento carece de persistencia y desarece al recargar)
