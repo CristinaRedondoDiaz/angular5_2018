@@ -82,7 +82,7 @@ export class BuscarGoogleComponent implements OnInit {
     });
   } */
 
-  /*   btnBuscarResV5() {
+   btnBuscarResV5() {
     this.aLibros = [];
     const url = this.sURL + this.sClave;
     this.httpClient.get(url).subscribe((response: any) => {
@@ -92,9 +92,9 @@ export class BuscarGoogleComponent implements OnInit {
         }
       );
     });
-  } */
+  }
 
-/*   btnBuscarRxFullV5() {
+   btnBuscarRxFullV5() {
     this.aLibros = [];
     const url = this.sURL + this.sClave;
     this.httpClient.get(url)
@@ -108,6 +108,6 @@ export class BuscarGoogleComponent implements OnInit {
       .subscribe((response) => { // se recibe la respuesta ya transformada
         this.aLibros = response;
     });
-  } */
+  } 
 
 }

@@ -25,12 +25,12 @@ export class BuscarHttpsrvComponent implements OnInit {
     });
   }
 
-/*   btnBuscarRx() {
+   btnBuscarRx() {
     this.aLibros = [];
     this.libros.buscarRx(this.sClave)
     .subscribe(
       response => this.aLibros = response,
       error => console.log(error)
     );
-  } */
+  }
 }
