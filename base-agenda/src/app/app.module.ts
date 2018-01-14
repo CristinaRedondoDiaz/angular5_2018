@@ -17,6 +17,7 @@ import { ContactosModule } from './contactos/contactos.module';
 import { LibrosMockService } from './services/libros-mock.service';
 import { WrapperMockService } from './services/wrapper-mock.service';
 import { LibrosV5Service } from './services/libros-v5.service';
+import { ContactosService } from './services/contactos.service';
 // Componente principal
 import { AppComponent } from './app.component';
 
@@ -42,6 +43,7 @@ import { AppComponent } from './app.component';
     LibrosMockService,
     WrapperMockService,
     LibrosV5Service,
+    ContactosService
   ],
   bootstrap: [AppComponent]
 })

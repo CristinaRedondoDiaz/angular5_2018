@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Contacto } from '../models/contactos';
+import { ContactosService } from '../services/contactos.service';
 
 @Component({
   selector: 'app-main-contactos',
@@ -11,41 +12,23 @@ export class MainContactosComponent implements OnInit {
   aContactos: Array<Contacto>;
   sContacto: string;
 
-  constructor() { }
+  constructor(public contactosService: ContactosService) { }
 
   ngOnInit() {
-    this.aContactos = [
-      /* { nombre: '',
-        apellido: '',
-        telefono: '',
-        email: ''}, */
-      { nombre: 'Pepe',
-        apellido: 'Pérez',
-        telefono: '123-123-123',
-        email: 'pperez@mail.com'},
-      { nombre: 'Luis',
-        apellido: 'Gomez',
-        telefono: '654-654-654',
-        email: 'lgomez@algo.es'}
-    ];
+     this.aContactos = this.contactosService.getContactos();
+
   }
 
   // respuesta a los eventos en el componente lista
   deleteTarea (i) {
-    this.aContactos.splice(i, 1);
-    // this.actualizaStorage();
+    this.contactosService.deleteContacto(i);
+    this.aContactos = this.contactosService.getContactos();
   }
 
 /*   // respuesta a los eventos en el componente item
   addTarea (sTarea) {
     this.aTareas.push(sTarea);
-    this.actualizaStorage();
   }
-
-
-
-  private actualizaStorage() {
-    localStorage.setItem('tareas', JSON.stringify(this.aTareas));
-  } */
-
+*/
 }
+
