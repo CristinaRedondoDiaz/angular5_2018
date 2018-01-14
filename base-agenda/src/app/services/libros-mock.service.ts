@@ -29,14 +29,4 @@ export class LibrosMockService {
     );
    }
 
-/*     buscarLibrosAsyncRx(clave: string) {
-     return new Observable(
-       (observer) => {
-        setTimeout(() => {
-          observer.next(this.aLibros);
-          }, 2000);
-       } // Fin del setTimeout
-     ); // Fin del Observable
-   } */
-
 } // Fin de la clase correspondiente al servicio

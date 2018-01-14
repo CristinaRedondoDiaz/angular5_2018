@@ -100,3 +100,5 @@ Se añade un script npm para inicializar el api
     - BuscarLibros - Busqueda simulada que utiliza los servicios LibrosMock/WrapperMock
     - BuscarGoogle - Busqueda en Google API directamente con Http / HttpCliente de Angular
     - BuscarHttpSrv - Busqueda en Google  que utiliza el servicio LibrosV5
+
+    Se incorporan las versiones Rx de la gestión de HttpCliet en otra Rama Git

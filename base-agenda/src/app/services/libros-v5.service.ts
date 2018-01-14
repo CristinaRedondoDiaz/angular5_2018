@@ -22,23 +22,6 @@ export class LibrosV5Service {
       return aLibros;
     });
   }
-
-  buscarRx (clave: string) {
-    const url = this.sURL + clave;
-    return this.http.get(url)
-    .map(
-      response => this.extractTitles(response)
-    );
-  }
-
-  private extractTitles(response: any) {
-    if (response.items) {
-      return response.items.map(
-        book => book.volumeInfo.title);
-    } else {
-      return response;
-    }
-  }
 }
 
 

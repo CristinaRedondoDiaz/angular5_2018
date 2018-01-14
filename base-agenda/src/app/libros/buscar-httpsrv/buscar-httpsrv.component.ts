@@ -24,13 +24,4 @@ export class BuscarHttpsrvComponent implements OnInit {
       this.aLibros = response;
     });
   }
-
-/*   btnBuscarRx() {
-    this.aLibros = [];
-    this.libros.buscarRx(this.sClave)
-    .subscribe(
-      response => this.aLibros = response,
-      error => console.log(error)
-    );
-  } */
 }

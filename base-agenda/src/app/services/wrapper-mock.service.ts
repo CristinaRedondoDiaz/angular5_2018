@@ -10,5 +10,4 @@ buscarLibro(clave: string) {
     return this.librosMockService.buscarLibro(clave);
   }
 
-
 }
